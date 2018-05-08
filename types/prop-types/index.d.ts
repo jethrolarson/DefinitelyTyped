@@ -28,3 +28,4 @@ export function oneOfType(types: Array<Validator<any>>): Requireable<any>;
 export function arrayOf(type: Validator<any>): Requireable<any>;
 export function objectOf(type: Validator<any>): Requireable<any>;
 export function shape(type: ValidationMap<any>): Requireable<any>;
+export function checkPropTypes(typeSpecs: any, values: any, location: string, componentName: string, getStack?: Function): void;
